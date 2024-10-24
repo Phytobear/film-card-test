@@ -7,7 +7,7 @@ function FilmCard({ movie }) {
     : "/placeholder.png";
 
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden w-64 m-4">
+    <div className="bg-white/20 rounded-lg shadow-md overflow-hidden w-64 m-4">
       <div className="relative h-96">
         <Image
           src={imageUrl}
@@ -19,8 +19,8 @@ function FilmCard({ movie }) {
       </div>
       <div className="p-4">
         <h2 className="text-lg font-semibold">{movie.title}</h2>
-        <p className="text-sm text-gray-500">Directed by: {movie.director}</p>
-        <p className="text-gray-600 text-sm mt-2">
+        <p className="text-sm text-white-500">Directed by: {movie.director}</p>
+        <p className="text-white-500 text-sm mt-2">
           {movie.overview
             ? `${movie.overview.substring(0, 100)}...`
             : "No description available."}

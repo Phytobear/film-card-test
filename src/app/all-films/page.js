@@ -43,7 +43,7 @@ export default async function AllFilmsPage() {
   );
 
   return (
-    <main className="bg-gray-100 min-h-screen">
+    <main className="bg-gradient-to-r from-indigo-800 via-purple-700 to-pink-500 min-h-screen">
       <h1 className="text-3xl font-bold text-center pt-8">All Films</h1>
       <div className="flex flex-wrap justify-center mt-8">
         {moviesWithDirector.map((movie) => (
